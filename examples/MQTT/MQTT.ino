@@ -86,8 +86,9 @@ void loop() {
 }
 
 void mqttCallback(char *topic, byte *payload, unsigned int len) {
-    char info[len];
+    char info[len+1];
     memcpy(info, payload, len);
+    info[len] = '\0';
     log("Message arrived [" + String(topic) + "]: ");
     log(info);
 }
