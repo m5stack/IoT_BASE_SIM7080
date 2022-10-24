@@ -23,4 +23,5 @@ void iotBaseInit() {
     delay(2000);
     digitalWrite(IoT_BASE_SIM7080_EN, HIGH);
     delay(500);
+    digitalWrite(IoT_BASE_SIM7080_EN, LOW);
 };
