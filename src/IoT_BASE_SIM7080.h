@@ -20,7 +20,9 @@
 void iotBaseInit() {
     pinMode(IoT_BASE_SIM7080_EN, OUTPUT);
     digitalWrite(IoT_BASE_SIM7080_EN, LOW);
-    delay(2000);
+    delay(500);
     digitalWrite(IoT_BASE_SIM7080_EN, HIGH);
+    delay(2000);
+    digitalWrite(IoT_BASE_SIM7080_EN, LOW);
     delay(500);
 };
